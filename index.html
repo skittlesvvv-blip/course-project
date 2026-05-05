@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCÀLA | Брендовые сумки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <!-- Верхняя плашка -->
+        <div class="top-bar" role="banner">
+            <span class="top-bar__text" data-i18n="topbar_delivery">БЕСПЛАТНАЯ ДОСТАВКА</span>
+            <button class="top-bar__close" aria-label="Закрыть уведомление">&times;</button>
+        </div>
+
+        <!-- Шапка -->
+        <header class="header">
+            <button class="burger-menu" aria-label="Открыть меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="header__top-row">
+                <div class="header__lang-switcher">
+                    <button class="header__lang-btn is-active" data-lang="ru" aria-pressed="true">RU</button>
+                    <span class="header__lang-sep">—</span>
+                    <button class="header__lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+
+                <div class="header__logo">
+                    <a href="index.html" aria-label="На главную SCÀLA">SCÀLA</a>
+                </div>
+
+                <div class="header__user-actions">
+                    <button class="header__icon" aria-label="Поиск">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    </button>
+                    <button class="header__icon" aria-label="Личный кабинет">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </button>
+                    <button class="header__icon" aria-label="Избранное">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </button>
+                    <button class="header__icon" aria-label="Корзина">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="header__nav" aria-label="Основная навигация">
+                <ul class="header__nav-list">
+                    <li><a href="catalog.html" class="header__nav-link" data-i18n="nav_catalog">КАТАЛОГ</a></li>
+                    <li><a href="#" class="header__nav-link" data-i18n="nav_about">О НАС</a></li>
+                    <li><a href="#" class="header__nav-link" data-i18n="nav_delivery">ДОСТАВКА И ОПЛАТА</a></li>
+                    <li><a href="#" class="header__nav-link" data-i18n="nav_custom">СДЕЛАНО НА ЗАКАЗ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Главный экран (Hero) -->
+        <main class="hero">
+            <h1 class="hero__title" data-i18n="hero_title">S T A Y &nbsp; W I L D</h1>
+            <img src="images/hero-bag.jpg" 
+                 alt="SCÀLA Сумка из коллекции Stay Wild" 
+                 class="hero__image">
+        </main>
+    </div>
+
+    <!-- Секция "Сделано вручную" -->
+    <section class="handmade-section">
+        <div class="handmade__container">
+            <div class="handmade__image-block">
+                <img src="images/handmade-bag.jpg" 
+                     alt="Сумка Scala ручной работы" 
+                     class="handmade__image">
+            </div>
+            
+            <div class="handmade__content-block">
+                <h2 class="handmade__title">СДЕЛАНО ВРУЧНУЮ</h2>
+                <p class="handmade__text">
+                    Каждая из наших сумок разрабатывается и производится в Италии опытными мастерами, которые уже не одно поколение создают кожаные изделия, сравнимые с произведением искусства.
+                </p>
+                <button class="handmade__btn">КУПИТЬ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция каталога (превью) -->
+    <section class="catalog-section">
+        <div class="catalog__container">
+            <div class="catalog__grid">
+                <article class="catalog__item">
+                    <img src="images/bag-blue-orange.jpg" alt="Сумка Scala сине-оранжевая" class="catalog__image">
+                </article>
+                <article class="catalog__item catalog__item--featured">
+                    <img src="images/bag-blue-featured.jpg" alt="Сумка Scala синяя премиум" class="catalog__image">
+                </article>
+                <article class="catalog__item">
+                    <img src="images/bag-snake.jpg" alt="Сумка Scala змеиная кожа" class="catalog__image">
+                </article>
+                <article class="catalog__item">
+                    <img src="images/bag-leopard.jpg" alt="Сумка Scala леопард" class="catalog__image">
+                </article>
+                <article class="catalog__item">
+                    <img src="images/bag-black.jpg" alt="Сумка Scala черная" class="catalog__image">
+                </article>
+                <article class="catalog__item">
+                    <img src="images/bag-leopard-set.jpg" alt="Набор сумок Scala леопард" class="catalog__image">
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Instagram -->
+    <section class="instagram-section">
+        <div class="instagram__container">
+            <h2 class="instagram__title">СЛЕДИТЕ ЗА НАМИ В <span class="instagram__title-underline">INSTAGRAM</span></h2>
+            <div class="instagram__grid">
+                <article class="instagram__item"><img src="images/instagram-1.jpg" alt="Instagram Scala 1" class="instagram__image"></article>
+                <article class="instagram__item instagram__item--vertical-text">
+                    <img src="images/instagram-2.jpg" alt="Instagram Scala 2" class="instagram__image">
+                    <span class="instagram__text-overlay">CREATE</span>
+                </article>
+                <article class="instagram__item instagram__item--video">
+                    <img src="images/instagram-3.jpg" alt="Instagram Scala 3" class="instagram__image">
+                    <div class="instagram__play-icon">▶</div>
+                </article>
+                <article class="instagram__item"><img src="images/instagram-4.jpg" alt="Instagram Scala 4" class="instagram__image"></article>
+                <article class="instagram__item"><img src="images/instagram-5.jpg" alt="Instagram Scala 5" class="instagram__image"></article>
+                <article class="instagram__item"><img src="images/instagram-6.jpg" alt="Instagram Scala 6" class="instagram__image"></article>
+                <article class="instagram__item"><img src="images/instagram-7.jpg" alt="Instagram Scala 7" class="instagram__image"></article>
+                <article class="instagram__item"><img src="images/instagram-8.jpg" alt="Instagram Scala 8" class="instagram__image"></article>
+                <article class="instagram__item instagram__item--live-text">
+                    <img src="images/instagram-9.jpg" alt="Instagram Scala 9" class="instagram__image">
+                    <span class="instagram__text-overlay instagram__text-overlay--live">LIVE</span>
+                </article>
+                <article class="instagram__item instagram__item--video instagram__item--presents">
+                    <img src="images/instagram-10.jpg" alt="Instagram Scala 10" class="instagram__image">
+                    <span class="instagram__text-overlay instagram__text-overlay--presents">presents</span>
+                    <div class="instagram__play-icon">▶</div>
+                </article>
+                <article class="instagram__item"><img src="images/instagram-11.jpg" alt="Instagram Scala 11" class="instagram__image"></article>
+                <article class="instagram__item instagram__item--video">
+                    <img src="images/instagram-12.jpg" alt="Instagram Scala 12" class="instagram__image">
+                    <div class="instagram__play-icon">▶</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Кнопка чата -->
+    <button class="chat-btn" aria-label="Открыть чат поддержки">
+        <svg viewBox="0 0 24 12" width="24" height="12">
+            <circle cx="4" cy="6" r="2" fill="#ffffff"/>
+            <circle cx="12" cy="6" r="2" fill="#ffffff"/>
+            <circle cx="20" cy="6" r="2" fill="#ffffff"/>
+        </svg>
+    </button>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__col footer__col--left">
+                <div class="footer__line"></div>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">ОБМЕН И ВОЗВРАТ</a></li>
+                    <li><a href="#" class="footer__link">ГАРАНТИЯ И УХОД</a></li>
+                    <li><a href="#" class="footer__link">ПОДАРОЧНАЯ КАРТА</a></li>
+                </ul>
+            </div>
+            <div class="footer__center">
+                <img src="images/footer-logo-s.png" alt="S Logo" class="footer__logo-img">
+                <p class="footer__subscribe-text">ПОДПИШИТЕСЬ, ЧТОБЫ ПОЛУЧАТЬ ОБНОВЛЕНИЯ, ДОСТУП К ЭКСКЛЮЗИВНЫМ ПРЕДЛОЖЕНИЯМ</p>
+                <form class="footer__form" action="#" method="POST">
+                    <input type="email" name="email" placeholder="NAME@EMAIL.COM" class="footer__input" required>
+                    <button type="submit" class="footer__btn">ПОДПИСАТЬСЯ</button>
+                </form>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__col footer__col--right">
+                <div class="footer__line"></div>
+                <ul class="footer__list">
+                    <li><a href="#" class="footer__link">КОНТАКТЫ</a></li>
+                    <li><a href="#" class="footer__link">ПУБЛИЧНАЯ ОФЕРТА</a></li>
+                    <li><a href="#" class="footer__link">КАРЬЕРА</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
