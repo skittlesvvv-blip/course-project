@@ -7,7 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Подключение стилей: общие + для каталога -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/catalog.css">
 </head>
 <body>
 
@@ -37,7 +40,7 @@
             </ul>
         </nav>
         <div class="catalog-header__categories">
-            <span class="is-active">ALL</span>
+            <a href="all-texts.html" class="is-active">ALL</a>
             <span>CHIC</span>
             <span>CLASSIC</span>
             <span>CASUAL</span>
@@ -62,7 +65,7 @@
             <div class="product-showcase__grid">
                 <!-- Фото слева -->
                 <div class="product-showcase__img">
-                    <img src="images/monica-big.jpg" alt="MONICA BIG">
+                    <img src="images/catalog/monica-big.jpg" alt="MONICA BIG">
                 </div>
                 <!-- Текст справа (с серым фоном вокруг) -->
                 <div class="product-showcase__info-wrapper">
@@ -82,8 +85,8 @@
     <section class="products-grid">
         <div class="container">
             <div class="products-grid__row">
-                <div class="products-grid__item"><img src="images/snake-1.jpg" alt=""></div>
-                <div class="products-grid__item"><img src="images/snake-2.jpg" alt=""></div>
+                <div class="products-grid__item"><img src="images/catalog/snake-1.jpg" alt=""></div>
+                <div class="products-grid__item"><img src="images/catalog/snake-2.jpg" alt=""></div>
             </div>
         </div>
     </section>
@@ -95,7 +98,7 @@
         <div class="container">
             <div class="product-showcase__grid">
                 <div class="product-showcase__img">
-                    <img src="images/monica-small.jpg" alt="MONICA SMALL">
+                    <img src="images/catalog/monica-small.jpg" alt="MONICA SMALL">
                 </div>
                 <div class="product-showcase__info-wrapper">
                     <div class="product-showcase__info">
@@ -114,31 +117,30 @@
     <section class="products-grid">
         <div class="container">
             <div class="products-grid__row products-grid__row--five">
-                <div class="products-grid__item"><img src="images/blue-orange.jpg" alt=""></div>
-                <div class="products-grid__item"><img src="images/blue-dark.jpg" alt=""></div>
-                <div class="products-grid__item"><img src="images/snake-3.jpg" alt=""></div>
-                <div class="products-grid__item"><img src="images/leopard-1.jpg" alt=""></div>
-                <div class="products-grid__item"><img src="images/black-1.jpg" alt=""></div>
+                <div class="products-grid__item"><img src="images/catalog/blue-orange.jpg" alt=""></div>
+                <div class="products-grid__item"><img src="images/catalog/blue-dark.jpg" alt=""></div>
+                <div class="products-grid__item"><img src="images/catalog/snake-3.jpg" alt=""></div>
+                <div class="products-grid__item"><img src="images/catalog/leopard-1.jpg" alt=""></div>
+                <div class="products-grid__item"><img src="images/catalog/black-1.jpg" alt=""></div>
             </div>
         </div>
     </section>
 
-    <div class="section-divider"></div>
-
     <!-- GRETA MEDIUM -->
-    <section class="product-showcase greya-block">
+    <section class="product-showcase greta-block">
         <div class="container">
             <div class="product-showcase__grid">
+                <!-- Фото слева -->
                 <div class="product-showcase__img">
-                    <img src="images/greta-medium.jpg" alt="GRETA MEDIUM">
+                    <img src="images/catalog/greta-medium.jpg" alt="GRETA MEDIUM">
                 </div>
+                <!-- Текст справа (с серой подложкой) -->
                 <div class="product-showcase__info-wrapper">
                     <div class="product-showcase__info">
                         <h2 class="product-showcase__title">G R E T A <span>MEDIUM</span></h2>
                         <p class="product-showcase__text">
                             Квадратный силуэт, мягкие, скругленные формы делают эту модель женственной и притягательной. Оптимальный размер для тех, кто не любит габаритные сумки, но хочет вместить все необходимое.
                         </p>
-                        <!-- Кнопка КУПИТЬ УБРАНА -->
                     </div>
                 </div>
             </div>
@@ -157,7 +159,8 @@
                 </ul>
             </div>
             <div class="footer__center">
-                <img src="images/footer-logo-s.png" alt="S Logo" class="footer__logo-img">
+                <!-- ✅ ИСПРАВЛЕНО: логотип из images/main/, а не catalog/ -->
+                <img src="images/main/footer-logo-s.png" alt="S Logo" class="footer__logo-img">
                 <p class="footer__subscribe-text">ПОДПИШИТЕСЬ, ЧТОБЫ ПОЛУЧАТЬ ОБНОВЛЕНИЯ, ДОСТУП К ЭКСКЛЮЗИВНЫМ ПРЕДЛОЖЕНИЯМ</p>
                 <form class="footer__form" action="#" method="POST">
                     <input type="email" name="email" placeholder="NAME@EMAIL.COM" class="footer__input" required>
@@ -182,7 +185,6 @@
             </div>
         </div>
     </footer>
-
 
     <!-- Кнопка чата (ТРИ ТОЧКИ) -->
     <button class="chat-btn" aria-label="Открыть чат поддержки">
