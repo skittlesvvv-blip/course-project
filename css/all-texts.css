@@ -1,0 +1,363 @@
+/* ========================================
+   ALL TEXTS - ФИНАЛЬНАЯ ИСПРАВЛЕННАЯ ВЕРСИЯ
+   ======================================== */
+
+/* 1. ГАРАНТИРОВАННО ЧЁРНЫЙ ФОН ПО БОКАМ */
+html, body 
+{
+    background-color: #000000 !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: var(--font-sans);
+}
+
+/* 2. ЕДИНОЕ ПРАВИЛО: ВСЕ СЕКЦИИ СТРОГО 1152px ПО ЦЕНТРУ */
+.hero-banner,
+.intro-block,
+.handmade-section,
+.leopard-photo-section,
+.article-section,
+.black-block 
+{
+    max-width: 1152px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* 3. БАННЕР (ШАПКА + ФОТО) */
+.hero-banner 
+{ 
+    position: relative; 
+    line-height: 0; 
+}
+.banner-img 
+{ 
+    
+    width: 100%; 
+    height: 251px; 
+    object-fit: cover; 
+    display: block; 
+}
+.overlay-header 
+{ 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 10; 
+    padding: 15px 0 10px; 
+    color: #ffffff; 
+}
+.header-row 
+{
+ display: flex; 
+ justify-content: space-between; 
+ align-items: center; 
+}
+.header-row--nav 
+{ 
+    justify-content: center; 
+    gap: 28px; 
+    margin-top: 25px; 
+}
+.lang-switch 
+{ 
+    font-size: 11px; 
+    letter-spacing: 1px; 
+}
+.lang-switch span 
+{ 
+    opacity: 0.7; 
+    cursor: pointer; 
+}
+.lang-switch .is-active 
+{ 
+    opacity: 1; 
+}
+.logo a 
+{ 
+    font-family: var(--font-serif); 
+    font-size: 24px; 
+    color: #ffffff; 
+    text-decoration: none; 
+    letter-spacing: 3px; 
+}
+.header-icons 
+{ 
+    display: flex; 
+    gap: 18px; 
+}
+.header-row--nav a 
+{ 
+    font-size: 10px; 
+    letter-spacing: 1.5px; 
+    color: #ffffff; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    opacity: 0.85; 
+    transition: opacity 0.3s; 
+}
+.header-row--nav a:hover 
+{ 
+    opacity: 1; 
+}
+
+/* 4. БЕЛЫЙ БЛОК С ЗАГОЛОВКОМ */
+.intro-block 
+{ 
+    background-color: #ffffff; 
+    padding: 80px 48px; 
+    text-align: center; 
+}
+.intro-title 
+{ 
+    font-family: var(--font-serif); 
+    font-size: 32px; 
+    letter-spacing: 8px; 
+    color: #000000; 
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+}
+.intro-text 
+{ 
+    font-size: 14px; 
+    line-height: 1.8; 
+    color: #4a4a4a; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+/* 5. СЕКЦИЯ "СДЕЛАНО ВРУЧНУЮ" */
+.handmade-section 
+{ 
+    background-color: #ffffff; 
+}
+.handmade-grid 
+{ 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+    width: 100%; 
+}
+.handmade-image img 
+{ 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+.handmade-content 
+{ 
+    padding: 80px 60px 80px 100px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+.handmade-title 
+{ 
+    font-family: var(--font-sans); 
+    font-size: 22px; 
+    font-weight: 400; 
+    letter-spacing: 3px; 
+    text-transform: uppercase; 
+    color: #000000; 
+    margin-bottom: 30px; 
+}
+.handmade-text 
+{ 
+    font-family: var(--font-sans); 
+    font-size: 14px; 
+    line-height: 1.7; 
+    color: #333333; 
+    max-width: 380px; 
+}
+
+/* 6. ФОТО ЛЕОПАРДОВ */
+.leopard-photo-section 
+{
+ background-color: #000000; 
+ line-height: 0; 
+}
+.leopard-full-image 
+{
+ width: 100%; 
+ height: auto; 
+ display: block; 
+ object-fit: cover; 
+}
+
+/* 7. СТАТЬЯ (ТЕКСТ + ФОТО РУК) */
+.article-section 
+{ 
+ background-color: #ffffff; 
+ padding: 80px 0px; 
+}
+.article-title 
+{
+    font-family: var(--font-sans);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    
+    /* ✅ ДОБАВЛЕНО: Выравнивание начала заголовка с текстом */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+.article-text 
+{ 
+    font-family: var(--font-sans); 
+    font-size: 14px; 
+    line-height: 1.6; 
+    color: #333333; 
+    margin-bottom: 20px; 
+    max-width: 800px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.article-image-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    width: 100%;
+}
+
+.article-image-wrapper img {
+    width: 800px !important;   /* Твоя ширина */
+    height: 402px !important;  /* Твоя высота */
+    object-fit: cover;
+    margin-left: 176px;        /* Твой Left: 124px от края контейнера */
+    /* Top: 2154px в макете — это просто позиция на холсте. 
+       В CSS позиция задаётся потоком. Если нужно опустить фото ниже, 
+       добавь: margin-top: 40px; (подбери визуально) */
+}
+
+/* Отступ между текстом сверху и фото */
+.article-image-wrapper 
+{
+    margin-top: 40px; /* ← Подбери число: 20px, 30px, 40px... */
+}
+/* Отступ между фото и текстом под ним */
+.article-image-wrapper + .article-text 
+{
+    margin-top: 40px; /* ← Меняй это число: 30px, 40px, 50px... */
+}
+
+/* === ГАРАНТИЯ: ВСЕ СЕКЦИИ СТРОГО 1152px (ЧЁРНЫЕ ПОЛОСКИ) === */
+/* === ЕДИНОЕ ПРАВИЛО: ВСЕ ГЛАВНЫЕ СЕКЦИИ СТРОГО 1152px ПО ЦЕНТРУ === */
+.hero-banner,
+.intro-block,
+.handmade-section,
+.leopard-photo-section,
+.article-section,
+.bottom-white-section, /* ← СЮДА ДОБАВЛЕНО */
+.black-block {
+    max-width: 1152px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+/* 1. Белая область на всю ширину 1152px */
+.bottom-white-section {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+/* 2. Серый блок: делаем его уже и центрируем */
+.highlight-block {
+    background-color: #f4f4f4;
+    max-width: 1050px !important; /* ← !important перебьёт общее правило 1152px. Меняй 750px на 700px/800px под макет */
+    margin: 0 auto;  
+    margin-top: -50px;            /* ← Строго по центру */
+    padding: 27px 0;             /* ← Высота серой полоски */
+}
+
+/* 3. Белый блок внутри серого */
+.highlight-box {
+    background-color: #ffffff;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.highlight-title {
+    font-family: var(--font-serif);
+    font-size: 30px;
+    letter-spacing: 18px;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* 4. Текст и кнопка ниже */
+.bottom-content {
+    max-width: 800px;          /* ← Как у .article-text */
+    margin: 0 auto;            /* ← Центрируем так же */
+    padding-top: 60px;
+    text-align: left;          /* ← Текст внутри выровнен по левому краю */
+}
+
+.bottom-text {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.btn-catalog {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 16px 60px;
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: opacity 0.3s;
+    margin-left: 0;            /* ← Убрали старый сдвиг 124px, чтобы не было двойного смещения */
+}
+.btn-catalog:hover { opacity: 0.8; }
+/* АДАПТИВ */
+@media (max-width: 1024px) 
+{
+    .banner-img 
+    { 
+        height: auto; 
+        min-height: 180px; 
+    }
+    .overlay-header 
+    { 
+        padding: 15px 20px 10px; 
+    }
+    .header-row--nav 
+    { 
+        gap: 15px; 
+        flex-wrap: wrap; 
+    }
+    .intro-block, 
+    .article-section, 
+    .black-block, 
+    .handmade-content 
+    { 
+        padding-left: 24px; 
+        padding-right: 24px; 
+    }
+    .intro-title 
+    {
+     font-size: 24px; 
+     letter-spacing: 4px; 
+    }
+    .handmade-grid 
+    { 
+        grid-template-columns: 1fr; 
+    }
+}
