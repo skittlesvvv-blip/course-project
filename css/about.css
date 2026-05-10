@@ -1,0 +1,322 @@
+/* ========================================
+   ABOUT PAGE - FULL STYLES (ШАПКА/ФУТЕР КАК В all-texts)
+   ======================================== */
+
+/* БАЗА */
+html, body {
+    background-color: #000000 !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: var(--font-sans);
+    color: #333333;
+}
+
+/* ЕДИНОЕ ПРАВИЛО: ВСЕ СЕКЦИИ СТРОГО 1152px ПО ЦЕНТРУ */
+.hero-banner,
+.about-section,
+.quote-section,
+.video-section,
+.footer {
+    max-width: 1152px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* === ШАПКА (КАК В all-texts.html) === */
+.hero-banner { position: relative; line-height: 0; }
+.banner-img { width: 100%; height: 251px; object-fit: cover; display: block; }
+.overlay-header { position: absolute; top: 0; left: 0; right: 0; z-index: 10; padding: 15px 0 10px; color: #ffffff; }
+.header-row { display: flex; justify-content: space-between; align-items: center; }
+.header-row--nav { justify-content: center; gap: 28px; margin-top: 25px; }
+.lang-switch { font-size: 11px; letter-spacing: 1px; }
+.lang-switch span { opacity: 0.7; cursor: pointer; }
+.lang-switch .is-active { opacity: 1; }
+.logo a { font-family: var(--font-serif); font-size: 24px; color: #ffffff; text-decoration: none; letter-spacing: 3px; }
+.header-icons { display: flex; gap: 18px; }
+.header-row--nav a { font-size: 10px; letter-spacing: 1.5px; color: #ffffff; text-decoration: none; text-transform: uppercase; opacity: 0.85; transition: opacity 0.3s; }
+.header-row--nav a:hover,
+.header-row--nav a.is-active { opacity: 1; border-bottom: 1px solid #ffffff; }
+
+/* === СЕКЦИИ === */
+.about-section { background-color: #ffffff; padding: 80px 48px; }
+.section-title { font-family: var(--font-serif); font-size: 32px; font-weight: 400; letter-spacing: 8px; text-transform: uppercase; color: #000000; margin: 0 0 30px; text-align: center; }
+.section-subtitle { font-family: var(--font-sans); font-size: 20px; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; color: #000000; margin: 0 0 30px; }
+.section-text {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.8;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto 4px; /* ← 8px — отступ снизу (было 20px). Поставь 5px для ещё меньшей дистанции */
+    text-align: center;
+}
+
+/* Для треугольника можно ещё меньше */
+.text-tri-1,
+.text-tri-2,
+.text-tri-3 {
+    margin-bottom: 5px; /* ← 5px между строчками треугольника */
+}
+.about-image 
+{ 
+    margin: 40px 0 40px 100px; 
+    width: 60%; 
+}
+.about-image img 
+{ 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+.about-desc-text {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.7;
+    color: #000000;
+    margin-bottom: 10px;      /* Отступ между абзацами */
+    margin-left: 100px;       /* ← Совпадает с отступом фото слева */
+    max-width: 650px;         /* Ограничиваем ширину для удобства чтения */
+    text-align: left;         /* Строго влево, как на макете */
+}
+/* === СЕРЫЙ БЛОК С ЦИТАТОЙ === */
+.bottom-white-section {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.highlight-block {
+    background-color: #f4f4f4;
+    max-width: 1050px !important;
+    margin: 0 auto;
+    margin-top: 50px;  /* Поднимает блок выше */
+    padding: 27px 0;
+}
+
+.highlight-box {
+    background-color: #ffffff;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.highlight-title {
+    font-family: var(--font-serif);
+    font-size: 30px;
+    letter-spacing: 18px;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* === ПРОИЗВОДСТВО (КАК ТЕКСТ ПОСЛЕ ФОТО) === */
+.production-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.section-subtitle {
+    font-family: var(--font-sans);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0 0 30px 100px; /* ← Отступ слева 100px */
+    text-align: left;
+}
+
+.production-text {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.7;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-left: 100px; /* ← Отступ слева 100px (как у фото и текста) */
+    max-width: 800px;
+    text-align: left;
+}
+/* === ВИДЕО === */
+.video-section-full {
+    background-color: #000000;
+    max-width: 1152px;
+    margin: 0 auto; /* Стандартные боковые отступы */
+    box-sizing: border-box;
+}
+
+.video-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.video-placeholder {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Соотношение 16:9 */
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.video-placeholder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(244, 225, 159, 0.9); /* Твой цвет */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    background-color: rgba(244, 225, 159, 1);
+}
+/* === РАЗУМНОЕ ПОТРЕБЛЕНИЕ (ВЫРАВНИВАНИЕ КАК В ПРОИЗВОДСТВЕ) === */
+.consumption-section {
+    background-color: #ffffff;
+    padding: 80px 0 100px; /* ← Боковые отступы 0, чтобы margin-left: 100px сработал точно */
+}
+
+.consumption-section .section-subtitle {
+    margin: 0 0 30px 100px; /* ← Начало заголовка на линии 100px */
+    text-align: left;
+}
+
+.consumption-text {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.7;
+    color: #000000;
+    margin: 0 0 15px 100px; /* ← Текст начинается строго на линии 100px */
+    max-width: 800px;       /* ← Одинаковая ширина колонки с «ПРОИЗВОДСТВО» */
+    text-align: left;
+}
+
+/* Фото под текстом */
+.consumption-gallery {
+    margin: 50px 0 0 100px; /* ← 50px воздуха от текста, старт на линии 100px */
+    width: 70%;             /* ← Уменьшенное фото */
+    max-width: 800px;
+}
+
+.consumption-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* === ФУТЕР (ТОЛЬКО ДЛЯ ABOUT.HTML) === */
+/* === ФУТЕР (БЕЛЫЙ, КАК В КАТАЛОГЕ) === */
+body .footer {
+    background-color: #ffffff !important; /* ← БЕЛЫЙ ФОН */
+    padding: 80px 0 40px !important;
+    color: #000000 !important;            /* ← ЧЁРНЫЙ ТЕКСТ */
+    max-width: 1152px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+body .footer__link {
+    color: #000000 !important;            /* ← ЧЁРНЫЕ ССЫЛКИ */
+    opacity: 0.8 !important;
+}
+
+body .footer__line {
+    background: #000000 !important;       /* ← ЧЁРНАЯ ЛИНИЯ */
+    opacity: 0.3 !important;
+}
+
+body .footer__logo-img {
+    filter: none !important;              /* ← УБРАЛИ ИНВЕРСИЮ (лого и так чёрное) */
+}
+
+body .footer__input {
+    border: 1px solid #000000 !important; /* ← ЧЁРНАЯ РАМКА */
+    color: #000000 !important;
+}
+
+body .footer__input::placeholder {
+    color: #999999 !important;
+}
+
+body .footer__btn {
+    border: 1px solid #000000 !important; /* ← ЧЁРНАЯ КНОПКА */
+    color: #000000 !important;
+}
+
+body .footer__btn:hover {
+    background: #f4f4f4 !important;       /* ← СЕРАЯ ПРИ НАВЕДЕНИИ */
+    color: #000000 !important;
+}
+
+body .footer__social-link {
+    color: #000000 !important;            /* ← ЧЁРНЫЕ ИКОНКИ */
+}
+
+body .footer__subscribe-text {
+    color: #000000 !important;            /* ← ЧЁРНЫЙ ТЕКСТ ПОДПИСКИ */
+}
+
+/* Кнопка чата для about.html */
+body .chat-btn {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    width: 56px !important;
+    height: 56px !important;
+    background-color: #333333 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 1000 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+    transition: transform 0.3s !important;
+}
+
+body .chat-btn:hover {
+    transform: scale(1.1) !important;
+}
+
+/* === АДАПТИВ ФУТЕРА === */
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 24px;
+    }
+    .footer__col { width: 100%; }
+    .footer__line { width: 80px; margin: 0 auto 20px; }
+}
+/* === АДАПТИВ === */
+@media (max-width: 1024px) {
+    .banner-img { height: auto; min-height: 180px; }
+    .overlay-header { padding: 15px 24px 10px; }
+    .header-row--nav { gap: 15px; flex-wrap: wrap; }
+    .about-section, .production-section, .consumption-section, .footer { padding-left: 24px; padding-right: 24px; }
+    .section-title { font-size: 24px; letter-spacing: 4px; }
+    .quote-text { font-size: 20px; letter-spacing: 3px; }
+    .footer__container { flex-direction: column; align-items: center; text-align: center; }
+    }
